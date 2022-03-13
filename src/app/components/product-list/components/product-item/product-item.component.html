@@ -1,0 +1,19 @@
+<div class="product">
+    <img [src]="'https://' + product.image" [alt]="product.description">
+    <div class="product-details">
+        <div class="product-description">
+            {{ product.description }}
+        </div>
+        <div class="product-brand">
+            {{ product.brand }}
+        </div>
+        <div class="product-price">
+           {{ product.price | currency: '$ ': 'symbol': '4.0-0' }}
+        </div>
+    </div>
+    <div class="product-actions">
+        <button class="btn-buy">
+            AGREGAR AL CARRITO
+        </button>
+    </div>
+</div>

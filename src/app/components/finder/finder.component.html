@@ -1,0 +1,9 @@
+<form [formGroup]="form"  (ngSubmit)="onSubmit()" *ngIf="form">
+    <div class="finder">
+        <div>
+            <input type="text" formControlName="search" placeholder="¿Qué estás buscando?..." />
+            <button>🔎</button>
+
+        </div>
+    </div>
+</form>
